@@ -1,0 +1,108 @@
+{
+  "historical_dataset_year": 2019,
+  "sources": [
+    "Banglore",
+    "Chennai",
+    "Delhi",
+    "Kolkata",
+    "Mumbai"
+  ],
+  "destinations": [
+    "Banglore",
+    "Cochin",
+    "Delhi",
+    "Hyderabad",
+    "Kolkata"
+  ],
+  "airlines": [
+    "Air Asia",
+    "Air India",
+    "GoAir",
+    "IndiGo",
+    "Jet Airways",
+    "Jet Airways Business",
+    "Multiple carriers",
+    "Multiple carriers Premium economy",
+    "SpiceJet",
+    "Trujet",
+    "Vistara",
+    "Vistara Premium economy"
+  ],
+  "additional_info": [
+    "1 Long layover",
+    "1 Short layover",
+    "2 Long layover",
+    "Business class",
+    "Change airports",
+    "In-flight meal not included",
+    "No Info",
+    "No check-in baggage included",
+    "No info",
+    "Red-eye flight"
+  ],
+  "routes": {
+    "Banglore": [
+      "Delhi"
+    ],
+    "Chennai": [
+      "Kolkata"
+    ],
+    "Delhi": [
+      "Cochin"
+    ],
+    "Kolkata": [
+      "Banglore"
+    ],
+    "Mumbai": [
+      "Hyderabad"
+    ]
+  },
+  "airlines_by_route": {
+    "Banglore|||Delhi": [
+      "Air Asia",
+      "Air India",
+      "GoAir",
+      "IndiGo",
+      "Jet Airways",
+      "Jet Airways Business",
+      "SpiceJet",
+      "Vistara"
+    ],
+    "Chennai|||Kolkata": [
+      "Air India",
+      "IndiGo",
+      "SpiceJet",
+      "Vistara",
+      "Vistara Premium economy"
+    ],
+    "Delhi|||Cochin": [
+      "Air Asia",
+      "Air India",
+      "GoAir",
+      "IndiGo",
+      "Jet Airways",
+      "Jet Airways Business",
+      "Multiple carriers",
+      "Multiple carriers Premium economy",
+      "SpiceJet",
+      "Vistara"
+    ],
+    "Kolkata|||Banglore": [
+      "Air Asia",
+      "Air India",
+      "GoAir",
+      "IndiGo",
+      "Jet Airways",
+      "SpiceJet",
+      "Vistara"
+    ],
+    "Mumbai|||Hyderabad": [
+      "Air India",
+      "IndiGo",
+      "Jet Airways",
+      "SpiceJet",
+      "Trujet",
+      "Vistara"
+    ]
+  }
+}

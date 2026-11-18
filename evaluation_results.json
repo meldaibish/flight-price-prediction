@@ -1,0 +1,116 @@
+{
+  "data_rows": 10683,
+  "training_rows": 8012,
+  "test_rows": 2671,
+  "model_comparison": [
+    {
+      "model": "Random Forest",
+      "cv_MAE": 751.8898776190111,
+      "cv_R2": 0.8682067108221622
+    },
+    {
+      "model": "Ridge regression",
+      "cv_MAE": 1801.7023064388839,
+      "cv_R2": 0.6472576636390512
+    },
+    {
+      "model": "Median baseline",
+      "cv_MAE": 3627.9529748708906,
+      "cv_R2": -0.025479290226982476
+    }
+  ],
+  "tuned_random_forest_cv_mae": 747.5772742146801,
+  "best_hyperparameters": {
+    "model__n_estimators": 150,
+    "model__min_samples_split": 5,
+    "model__min_samples_leaf": 1,
+    "model__max_features": 1.0,
+    "model__max_depth": 18
+  },
+  "test_results": {
+    "selected_model": "Tuned Random Forest",
+    "MAE": 664.4671848949023,
+    "RMSE": 1530.6028109433746,
+    "R2": 0.8853134594349451,
+    "MAPE_percent": 7.5982845493070235
+  },
+  "feature_importance": {
+    "Airline": 1824.0890785981367,
+    "duration_minutes": 1789.909446753978,
+    "journey_month": 861.9679643012392,
+    "Additional_Info": 657.7224602131306,
+    "journey_day": 497.27729232818893,
+    "total_stops": 437.7359567713408,
+    "Source": 264.42574889811937,
+    "Destination": 254.37992303433919,
+    "departure_minute": 205.26143973121626,
+    "arrival_hour": 186.5203147560103,
+    "departure_hour": 165.78901355604833,
+    "arrival_minute": 142.1055749049705,
+    "journey_weekday": 138.70924835512437
+  },
+  "airline_error": [
+    {
+      "airline": "Air Asia",
+      "count": 85,
+      "mean": 757.4585213791
+    },
+    {
+      "airline": "Air India",
+      "count": 442,
+      "mean": 1004.224793360535
+    },
+    {
+      "airline": "GoAir",
+      "count": 45,
+      "mean": 1291.2834056969575
+    },
+    {
+      "airline": "IndiGo",
+      "count": 486,
+      "mean": 425.4066951603249
+    },
+    {
+      "airline": "Jet Airways",
+      "count": 979,
+      "mean": 496.0030658747502
+    },
+    {
+      "airline": "Jet Airways Business",
+      "count": 1,
+      "mean": 33014.158690476186
+    },
+    {
+      "airline": "Multiple carriers",
+      "count": 304,
+      "mean": 1187.6725728379927
+    },
+    {
+      "airline": "SpiceJet",
+      "count": 212,
+      "mean": 281.6248534444171
+    },
+    {
+      "airline": "Vistara",
+      "count": 115,
+      "mean": 517.3614973841346
+    },
+    {
+      "airline": "Vistara Premium economy",
+      "count": 2,
+      "mean": 1415.223656712425
+    }
+  ],
+  "duplicate_overlap_audit": {
+    "exact_feature_match_between_train_and_test": 157,
+    "unique_feature_rows_in_test": 2514,
+    "novel_test_MAE": 653.03139778994,
+    "novel_test_R2": 0.8867435280270051,
+    "novel_test_MAPE_percent": 7.524762887146517
+  },
+  "artifact_details": {
+    "model_file": "models/flight_price_model.joblib",
+    "trained_with_sklearn": "1.8.0",
+    "shared_inference_features": "src/flight_features.py"
+  }
+}
